@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        FORM WITH CNF PWD
+        </title>
+
+        <style>
+            body {
+                background-color: beige;
+            }
+            .container {
+    
+                background-color: rgb(197, 115, 74);
+                font-family: 'Times New Roman', Times, serif;
+                padding: auto;
+                width: 200px ;
+                height: 30px;
+                border: 0.5ex;
+                text-align: center;
+                
+            }
+            .head {
+                background-color: rgb(189, 252, 121);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: auto;
+                width: auto;
+                border: 0.3ex;
+                text-align: center;
+                
+            }
+
+            
+        </style>
+        <div class="head">
+        <h3> <p style="color: rgb(193, 90, 147)";> Login</p>    </h3> 
+    </div>
+
+    </head>
+    
+    
+    <script>
+        function fun()
+        {       //uname
+                var unm = document.getElementById("uname").value;
+                if(unm == "")
+                {
+                    alert(" You must Enter your Email ")    ;
+                }
+                //password
+                var pas = document.getElementById("password").value;
+                var cpas = document.getElementById("cpassword").value;
+                if(pas == "")
+                {
+                    alert(" You must Enter your password ")    ;
+                }
+                else{
+                        if(pas == cpas)
+                        {
+                            document.write("Hii " + unm + " How you Doin !! ?" );
+                        }
+                        else
+                        {
+                            alert(" Password doesnt matches with Confirm password") ; 
+                        }
+                    }   
+        }
+    </script>
+ 
+    <body>
+
+        <style>
+            
+         form {border: 2px solid #55bcf0;}
+    </style>
+       
+   <center>
+    <div class = "container">
+       
+    <form action="">
+        <label for="uname"><b>Username</b></label><br>
+        <input type="text" name="Username" id="uname" placeholder=" Enter Username "><br>
+
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" name="Password" id="password" placeholder="Enter Password"><br>
+
+        <label for="cpassword"><b>Confirm Password</b></label><br>
+        <input type="password" name="Confirm Password" id="cpassword" placeholder="Confirm Password"><br>
+
+        <button type ="button" onclick=fun() value="submit">Submit</button><br>
+    
+    </form>
+</div>
+</center>
+</body>
+
+
+
+</html>

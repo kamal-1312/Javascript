@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+
+
+</head>
+<style>
+    body {
+        background-color: rgb(216, 206, 159);
+      
+    }
+
+    .container 
+    {
+        background-color: aquamarine;
+        width: auto;
+        height: auto;
+        border: 0.5em;
+        border-color: brown ;
+    }
+    .head {
+        background-color: rgb(90, 165, 219);
+        width: auto;
+        height: auto;
+
+    }
+</style>
+<body>
+    <center>
+<div class="head">        
+<h3>Simple Interest</h3>
+</div>
+<script>
+    function Intrest()
+    {
+        var p = parseInt(document.getElementById("principle").value);
+        var r = parseInt(document.getElementById("roi").value);
+        var t = parseInt(document.getElementById("time").value);
+
+        var n = p*r*t/100 ;
+
+        document.getElementById("num").value = n ;
+
+    }
+</script>
+<div class="container"><input type="number" id="principle" placeholder="Enter Principle"><br>
+<input type="number" id="roi" placeholder="Enter Rate of Intrest"><br>
+<input type="number" id="time" placeholder="Enter Time"><br>
+
+
+<button type="submit" onclick="Intrest()" value="Submit"> Submit </button><br>  
+
+Result :
+<br> <input type="number" name="num" id="num">
+</center>
+</div>
+
+</body>
+</html>

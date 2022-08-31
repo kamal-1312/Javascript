@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JS</title>
+</head>
+<body>
+<h3>Onfocus Event</h3>
+<script>
+
+    function Focuss(x) 
+    {
+        x.style.background = "lightblue";
+    }
+
+</script>
+Enter your name: <input type="text" onfocus="Focuss(this)">
+ 
+<h3>Onblur Event</h3>
+<script>
+    function Blur()
+    {
+        var x = document.getElementById("Frame").value;
+        x.value = x.value.touppercase();
+    }
+</script>
+Enter your Name :
+<input type="text"  id="Fname" onblur="Blur()">
+
+<h3>mouseover events</h3>
+
+<h1 onmouseover="style.color='red'"
+onmouseout="style.color='black'">
+Mouse over this text</h1>
+
+<img onmouseover="bigImg(this)" onmouseout="normalimg(this)" src="TheBatman.jpg" alt="TheBatman" width="80px" height="200px">
+ <script>
+    function bigImg(x)
+    {
+        x.style.height = "320px" ;
+        x.style.width = "140px" ;
+
+    }
+    function normalimg(x)
+    {
+        x.style.height = "200px"
+        x.style.width = "80px"
+        
+    }
+ </script>
+
+    
+</body>
+</html>
