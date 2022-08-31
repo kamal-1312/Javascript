@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        n1=parseInt(prompt("Enter first value:"));
+        n2=parseInt(prompt("Enter second value:"));
+        n3=parseInt(prompt("Enter third value:"));
+
+        if(n1 > n2 && n1 > n3)
+            document.getElementById('p1').innerHTML=n1+" is max number ";
+        else if(n2 > n1 && n2 > n3)
+            document.getElementById('p1').innerHTML=n2+" is max number ";
+        else
+            document.getElementById('p1').innerHTML=n3+" is max number ";
+
+        if(n1 < n2 && n1 < n3)
+            document.getElementById('p2').innerHTML=n1+" is Min number";
+        else if(n2 < n1 && n2 < n3)
+            document.getElementById('p2').innerHTML=n2+" is Min number";
+        else
+            document.getElementById('p2').innerHTML=n3+" is Min number";
+
+
+    </script>
+</body>
+</html>

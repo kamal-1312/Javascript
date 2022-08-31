@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter marks between 0-50</h2>
+    Enter marks for s1 <input type="number" id="s1"><br>
+    Enter marks for s2 <input type="number" id="s2"><br>
+    Enter marks for s3 <input type="number" id="s3"><br>
+
+    <input type="submit" value="Result" onclick="Result()">
+
+    <script>
+        function Result()
+        {
+            var s1= parseInt(document.getElementById('s1').value);    
+            var s2= parseInt(document.getElementById('s2').value);
+            var s3= parseInt(document.getElementById('s3').value);
+
+            var total = s1 + s2 + s3;
+            total = parseInt(total);
+
+            if(total >= 0 && total <=50)
+                alert("You are Failed");
+            else if(total > 50 && total <=100)
+                alert("You are passed");
+            else if(total > 100 && total <=150)
+                alert("You got First class");
+            else    
+                alert("Please enter correct value");
+        }
+    </script>
+</body>
+</html>
